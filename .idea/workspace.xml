@@ -225,10 +225,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="524" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741@0.27.1366.741" timestamp="1575969529105" />
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576106361534">
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576106457644">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576106361534" />
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576106457644" />
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576082976919">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -265,6 +265,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="369" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1576097266462" />
+    <state x="315" y="110" width="716" height="574" key="RollbackChangesDialog" timestamp="1576106409312">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="315" y="110" width="716" height="574" key="RollbackChangesDialog/0.27.1366.741@0.27.1366.741" timestamp="1576106409312" />
     <state x="181" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1575969835958">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

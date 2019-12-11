@@ -1,11 +1,10 @@
-package ir.mctab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl;
+package ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl;
 
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Service;
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.UseCase;
-import ir.mctab.java32.projects.scholarshipmanagement.core.config.DatabaseConfig;
-import ir.mctab.java32.projects.scholarshipmanagement.core.share.AuthenticationService;
-import ir.mctab.java32.projects.scholarshipmanagement.features.scholarshipverification.usecases.AcceptScholarshipBySupervisorUseCase;
-import ir.mctab.java32.projects.scholarshipmanagement.model.User;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Service;
+import ir.maktab.java32.projects.scholarshipmanagement.core.config.DatabaseConfig;
+import ir.maktab.java32.projects.scholarshipmanagement.core.share.AuthenticationService;
+import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.usecases.AcceptScholarshipBySupervisorUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,6 +12,7 @@ import java.sql.SQLException;
 
 @Service
 public class AcceptScholarshipBySupervisorUseCaseImpl implements AcceptScholarshipBySupervisorUseCase {
+    @Override
     public void accept(Long scholarshipId) {
         User user = AuthenticationService.getInstance().getLoginUser();
 
@@ -28,9 +28,7 @@ public class AcceptScholarshipBySupervisorUseCaseImpl implements AcceptScholarsh
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setLong(1, scholarshipId);
                 preparedStatement.executeUpdate();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
+            } catch (ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             }
         }
