@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f346e52-560b-462f-b97f-7cea0cffc422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ScholarshipManagement.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/UseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByManagerUseCaseImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByManagerUseCaseImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByStudentUseCaseImpl.java" afterDir="false" />
@@ -25,26 +19,11 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByManagerUseCase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipBySupervisorUseCase.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RequestScholarshipByStudentUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LogRecordUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LogoutUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/ShowLogUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/SubmitByUserUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogRecordUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LoginUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogoutUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/ShowLogUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/SubmitByUserUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Entity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Id.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Service.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/UseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/config/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/share/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/share/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByManagerUseCaseImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipBySupervisorUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipBySupervisorUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByManagerUseCaseImpl.java" beforeDir="false" />
@@ -63,11 +42,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByManagerUseCase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipBySupervisorUseCase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RequestScholarshipByStudentUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LoginUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LoginUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LoginUseCase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogoutUseCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/model/Scholarship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/Scholarship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Entity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Id.class" beforeDir="false" />
@@ -194,12 +170,43 @@
       <workItem from="1575969236020" duration="1754000" />
       <workItem from="1576061709251" duration="6138000" />
       <workItem from="1576081338614" duration="5110000" />
-      <workItem from="1576096147478" duration="9769000" />
+      <workItem from="1576096147478" duration="10154000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1576106190217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576106190217</updated>
+    </task>
+    <task id="LOCAL-00002" summary="UserManagement feature completed.">
+      <created>1576106361934</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576106361934</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <MESSAGE value="UserManagement feature completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="UserManagement feature completed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="58" width="800" height="677" key="#Project_Structure" timestamp="1575969789787">
@@ -218,10 +225,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="524" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741@0.27.1366.741" timestamp="1575969529105" />
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576106189887">
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576106361534">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576106189887" />
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576106361534" />
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576082976919">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
