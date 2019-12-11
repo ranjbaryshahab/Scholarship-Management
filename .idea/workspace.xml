@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f346e52-560b-462f-b97f-7cea0cffc422" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ScholarshipManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/annotations/UseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByManagerUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByManagerUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByStudentUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByUniversityUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RejectScholarshipByManagerUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RejectScholarshipBySupervisorUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RequestScholarshipByStudentUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipByManagerUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipBySupervisorUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByManagerUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByStudentUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipBySupervisorUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByUniversityUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByManagerUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipBySupervisorUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RequestScholarshipByStudentUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LogRecordUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LogoutUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/ShowLogUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/SubmitByUserUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogRecordUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LoginUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogoutUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/ShowLogUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/SubmitByUserUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/UseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/config/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/core/share/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/share/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByManagerUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipBySupervisorUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipBySupervisorUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByManagerUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByStudentUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipBySupervisorUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipBySupervisorUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipByUniversityUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RejectScholarshipByManagerUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RejectScholarshipBySupervisorUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RequestScholarshipByStudentUseCaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipByManagerUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipBySupervisorUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByManagerUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByStudentUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipBySupervisorUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByUniversityUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByManagerUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipBySupervisorUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RequestScholarshipByStudentUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LoginUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LoginUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LoginUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogoutUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/model/Scholarship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/Scholarship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/mctab/java32/projects/scholarshipmanagement/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/ScholarshipManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/annotations/UseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/config/DatabaseConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/core/share/AuthenticationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByManagerUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/FindScholarshipBySupervisorUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipByManagerUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipBySupervisorUsecase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByManagerUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByStudentUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipBySupervisorUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/FindScholarshipByUniversityUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByManagerUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipBySupervisorUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RequestScholarshipByStudentUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/impl/LoginUseCaseImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LoginUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/features/usermanagement/usecases/LogoutUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/model/Scholarship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ir/mctab/java32/projects/scholarshipmanagement/model/User.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UZAhSW4S1x1UNHYqCkIh00FPPJ" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lettermanagment" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ScholarshipManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.maktab.java32.projects.scholarshipmanagement.ScholarshipManagementApplication" />
+      <module name="ScholarshipManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.maktab.java32.projects.scholarshipmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ScholarshipManagementApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f346e52-560b-462f-b97f-7cea0cffc422" name="Default Changelist" comment="" />
+      <created>1575553863918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575553863918</updated>
+      <workItem from="1575553873796" duration="213000" />
+      <workItem from="1575579037161" duration="331000" />
+      <workItem from="1575719454208" duration="1555000" />
+      <workItem from="1575837362913" duration="132000" />
+      <workItem from="1575837536041" duration="595000" />
+      <workItem from="1575969236020" duration="1754000" />
+      <workItem from="1576061709251" duration="6138000" />
+      <workItem from="1576081338614" duration="5110000" />
+      <workItem from="1576096147478" duration="9769000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="58" width="800" height="677" key="#Project_Structure" timestamp="1575969789787">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="58" width="800" height="677" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1575969789787" />
+    <state x="278" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576067007166">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1576067007166" />
+    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1576105840829">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1576105840829" />
+    <state x="524" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575969529105">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="524" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1366.741@0.27.1366.741" timestamp="1575969529105" />
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576106068159">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576106068159" />
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576082976919">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1576082976919" />
+    <state width="1320" height="324" key="GridCell.Tab.0.bottom" timestamp="1576105750683">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="324" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1576105750683" />
+    <state width="1320" height="324" key="GridCell.Tab.0.center" timestamp="1576105750682">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="324" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1576105750682" />
+    <state width="1320" height="324" key="GridCell.Tab.0.left" timestamp="1576105750681">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="324" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1576105750681" />
+    <state width="1320" height="324" key="GridCell.Tab.0.right" timestamp="1576105750682">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="324" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1576105750682" />
+    <state width="1320" height="369" key="GridCell.Tab.1.bottom" timestamp="1576097266462">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="369" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1576097266462" />
+    <state width="1320" height="369" key="GridCell.Tab.1.center" timestamp="1576097266462">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="369" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1576097266462" />
+    <state width="1320" height="369" key="GridCell.Tab.1.left" timestamp="1576097266461">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="369" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1576097266461" />
+    <state width="1320" height="369" key="GridCell.Tab.1.right" timestamp="1576097266462">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="369" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1576097266462" />
+    <state x="181" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1575969835958">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="181" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1575969835958" />
+    <state width="581" height="446" key="SwitcherDM" timestamp="1576063409970">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="581" height="446" key="SwitcherDM/0.27.1366.741@0.27.1366.741" timestamp="1576063409970" />
+    <state x="278" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575969442544">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1575969442544" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576081363679">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1576081363679" />
+    <state x="282" y="190" width="791" height="413" key="git4idea.merge.GitPullDialog" timestamp="1575969308468">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="282" y="190" width="791" height="413" key="git4idea.merge.GitPullDialog/0.27.1366.741@0.27.1366.741" timestamp="1575969308468" />
+    <state x="177" y="59" width="933" height="605" key="new project wizard" timestamp="1575837442005">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="177" y="59" width="933" height="605" key="new project wizard/0.27.1366.741@0.27.1366.741" timestamp="1575837442005" />
+  </component>
+</project>
