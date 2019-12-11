@@ -1,7 +1,7 @@
-package ir.mctab.java32.projects.scholarshipmanagement.model;
+package ir.maktab.java32.projects.scholarshipmanagement.model;
 
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Entity;
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Id;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Entity;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Id;
 
 @Entity
 public class Scholarship {
@@ -38,6 +38,9 @@ public class Scholarship {
         this.applyDegree = applyDegree;
         this.applyField = applyField;
         this.applyDate = applyDate;
+    }
+
+    public Scholarship() {
     }
 
     public Long getId() {

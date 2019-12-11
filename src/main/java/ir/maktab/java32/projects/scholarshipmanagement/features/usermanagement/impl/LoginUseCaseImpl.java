@@ -1,10 +1,10 @@
-package ir.mctab.java32.projects.scholarshipmanagement.features.usermanagement.impl;
+package ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl;
 
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Service;
-import ir.mctab.java32.projects.scholarshipmanagement.core.config.DatabaseConfig;
-import ir.mctab.java32.projects.scholarshipmanagement.core.share.AuthenticationService;
-import ir.mctab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.LoginUseCase;
-import ir.mctab.java32.projects.scholarshipmanagement.model.User;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Service;
+import ir.maktab.java32.projects.scholarshipmanagement.core.config.DatabaseConfig;
+import ir.maktab.java32.projects.scholarshipmanagement.core.share.AuthenticationService;
+import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.LoginUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,9 +33,7 @@ public class LoginUseCaseImpl implements LoginUseCase {
                 AuthenticationService.getInstance().setLoginUser(user);
                 return user;
             }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
         // return result

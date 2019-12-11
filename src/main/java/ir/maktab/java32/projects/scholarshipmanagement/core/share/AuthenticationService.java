@@ -1,6 +1,6 @@
-package ir.mctab.java32.projects.scholarshipmanagement.core.share;
+package ir.maktab.java32.projects.scholarshipmanagement.core.share;
 
-import ir.mctab.java32.projects.scholarshipmanagement.model.User;
+import ir.maktab.java32.projects.scholarshipmanagement.model.User;
 
 public class AuthenticationService {
 

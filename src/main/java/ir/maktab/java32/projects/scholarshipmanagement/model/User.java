@@ -1,7 +1,7 @@
-package ir.mctab.java32.projects.scholarshipmanagement.model;
+package ir.maktab.java32.projects.scholarshipmanagement.model;
 
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Entity;
-import ir.mctab.java32.projects.scholarshipmanagement.core.annotations.Id;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Entity;
+import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Id;
 
 @Entity
 public class User {
@@ -11,6 +11,9 @@ public class User {
     private String username;
     private String password;
     private String role;
+
+    public User() {
+    }
 
     public User(Long id, String username, String password, String role) {
         this.id = id;
