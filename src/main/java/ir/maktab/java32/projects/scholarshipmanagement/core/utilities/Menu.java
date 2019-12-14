@@ -47,6 +47,8 @@ public class Menu {
                 |     Show scholarship list   |
                 |     Accept scholarship      |
                 |     Reject scholarship      |
+                |     Accept All              |
+                |     Reject All              |
                 |     Report                  |
                 |     Logout                  |
                 +-----------------------------+
@@ -59,6 +61,8 @@ public class Menu {
                 |      Show scholarship list    |
                 |      Accept scholarship       |
                 |      Reject scholarship       |
+                |      Accept All               |
+                |      Reject All               |
                 |      Report                   |
                 |      Logout                   |
                 +-------------------------------+
@@ -82,6 +86,8 @@ public class Menu {
                 |     Show scholarship     |
                 |     Accept scholarship   |
                 |     Reject scholarship   |
+                |     Accept All           |
+                |     Reject All           |
                 |     Report               |
                 |     Logout               |
                 +--------------------------+
@@ -199,6 +205,17 @@ public class Menu {
                         new ScholarshipReportByManagerUseCaseImpl();
                 scholarshipReportByManagerUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
             }
+
+            case "accept all" -> {
+                AcceptAllScholarshipByManagerUseCase acceptAllScholarshipByManagerUseCase =
+                        new AcceptAllScholarshipByManagerUseCaseImpl();
+                acceptAllScholarshipByManagerUseCase.acceptAll();
+            }
+            case "reject all" -> {
+                RejectAllScholarshipByManagerUseCase rejectAllScholarshipByManagerUseCase =
+                        new RejectAllScholarshipByManagerUseCaseImpl();
+                rejectAllScholarshipByManagerUseCase.rejectAll();
+            }
         }
     }
 
@@ -249,6 +266,17 @@ public class Menu {
                 ScholarshipReportBySupervisorUseCase scholarshipReportBySupervisorUseCase =
                         new ScholarshipReportBySupervisorUseCaseImpl();
                 scholarshipReportBySupervisorUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+            }
+
+            case "accept all" -> {
+                AcceptAllScholarshipBySupervisorUseCase acceptAllScholarshipBySupervisorUseCase =
+                        new AcceptAllScholarshipBySupervisorUseCaseImpl();
+                acceptAllScholarshipBySupervisorUseCase.acceptAll();
+            }
+            case "reject all" -> {
+                RejectAllScholarshipBySupervisorUseCase rejectAllScholarshipBySupervisorUseCase =
+                        new RejectAllScholarshipBySupervisorUseCaseImpl();
+                rejectAllScholarshipBySupervisorUseCase.rejectAll();
             }
         }
     }
@@ -328,6 +356,16 @@ public class Menu {
                 ScholarshipReportByUniversityUseCase scholarshipReportByUniversityUseCase =
                         new ScholarshipReportByUniversityUseCaseImpl();
                 scholarshipReportByUniversityUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+            }
+            case "accept all" -> {
+                AcceptAllScholarshipByUniversityUseCaseImpl acceptAllScholarshipByUniversityUseCase =
+                        new AcceptAllScholarshipByUniversityUseCaseImpl();
+                acceptAllScholarshipByUniversityUseCase.acceptAll();
+            }
+            case "reject all" -> {
+                RejectAllScholarshipByUniversityUseCase rejectAllScholarshipByUniversityUseCase =
+                        new RejectAllScholarshipByUniversityUseCaseImpl();
+                rejectAllScholarshipByUniversityUseCase.rejectAll();
             }
         }
 
