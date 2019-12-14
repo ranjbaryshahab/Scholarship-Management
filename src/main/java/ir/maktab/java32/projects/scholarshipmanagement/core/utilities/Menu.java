@@ -1,7 +1,5 @@
 package ir.maktab.java32.projects.scholarshipmanagement.core.utilities;
 
-import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.LogRecordUseCase;
-import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.LogRecordUseCaseImpl;
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCaseImpl;
 import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl.*;
@@ -19,6 +17,7 @@ import ir.maktab.java32.projects.scholarshipmanagement.model.User;
 import java.util.List;
 import java.util.Scanner;
 
+@SuppressWarnings("Duplicates")
 public class Menu {
     public static User user = null;
     public static Scanner scanner = new Scanner(System.in);
@@ -70,6 +69,8 @@ public class Menu {
         return """
                 +--------------------------+
                 |     Show scholarship     |
+                |     Accept scholarship   |
+                |     Reject scholarship   |
                 |     Logout               |
                 +--------------------------+
                  """;
@@ -120,7 +121,7 @@ public class Menu {
                     System.out.println(scholarship);
                     System.out.println("Logs -> { ");
                     List<Log> logs = showLogUseCase.showLogByScholarshipId(scholarship.getId());
-                    for (Log log: logs) {
+                    for (Log log : logs) {
                         System.out.println(log);
                     }
                     System.out.println("}");
@@ -148,7 +149,7 @@ public class Menu {
                     System.out.println(scholarship);
                     System.out.println("Logs -> { ");
                     List<Log> logs = showLogUseCase.showLogByScholarshipId(scholarship.getId());
-                    for (Log log: logs) {
+                    for (Log log : logs) {
                         System.out.println(log);
                     }
                     System.out.println("}");
@@ -192,7 +193,7 @@ public class Menu {
                     System.out.println(scholarship);
                     System.out.println("Logs -> { ");
                     List<Log> logs = showLogUseCase.showLogByScholarshipId(scholarship.getId());
-                    for (Log log: logs) {
+                    for (Log log : logs) {
                         System.out.println(log);
                     }
                     System.out.println("}");
@@ -264,13 +265,30 @@ public class Menu {
                     System.out.println(scholarship);
                     System.out.println("Logs -> { ");
                     List<Log> logs = showLogUseCase.showLogByScholarshipId(scholarship.getId());
-                    for (Log log: logs) {
+                    for (Log log : logs) {
                         System.out.println(log);
                     }
                     System.out.println("}");
                     System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------");
                 }
             }
+
+            case "accept scholarship" -> {
+                AcceptScholarshipByUniversityUseCase acceptScholarshipByUniversityUseCase
+                        = new AcceptScholarshipByUniversityUseCaseImpl();
+                System.out.println("Scholarship Id: ");
+                String scholarshipId = scanner.nextLine();
+                acceptScholarshipByUniversityUseCase.accept(Integer.parseInt(scholarshipId));
+                System.out.println("Done.");
+            }
+            case "reject scholarship" -> {
+                RejectScholarshipByUniversityUseCase rejectScholarshipByUniversityUseCase =
+                        new RejectScholarshipByUniversityUseCaseImpl();
+                System.out.println("Please enter the user id for reject: ");
+                int id = scanner.nextInt();
+                rejectScholarshipByUniversityUseCase.rejected(id);
+            }
+
             case "logout" -> {
                 LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
                 user = logoutUseCase.logout();
