@@ -30,7 +30,7 @@ public class FindScholarshipBySupervisorUseCaseImpl implements FindScholarshipBy
                     ResultSet resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
                         Scholarship scholarship = new Scholarship(
-                                resultSet.getLong("id"),
+                                resultSet.getInt("id"),
                                 resultSet.getString("status"),
                                 resultSet.getString("name"),
                                 resultSet.getString("family"),
@@ -42,7 +42,8 @@ public class FindScholarshipBySupervisorUseCaseImpl implements FindScholarshipBy
                                 resultSet.getString("applyUni"),
                                 resultSet.getString("applyDegree"),
                                 resultSet.getString("applyField"),
-                                resultSet.getString("applyDate")
+                                resultSet.getString("applyDate"),
+                                loginUser
                         );
                         result.add(scholarship);
                     }

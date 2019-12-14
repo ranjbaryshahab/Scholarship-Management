@@ -7,4 +7,5 @@ import java.util.List;
 @UseCase
 public interface FindScholarshipByStudentUseCase {
     List<Scholarship> listScholarships();
+    Scholarship findById();
 }

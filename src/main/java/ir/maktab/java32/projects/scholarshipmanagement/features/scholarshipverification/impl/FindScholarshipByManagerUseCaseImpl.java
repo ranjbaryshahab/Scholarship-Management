@@ -33,7 +33,7 @@ public class FindScholarshipByManagerUseCaseImpl implements FindScholarshipByMan
                     ResultSet resultSet = preparedStatement.executeQuery();
                     while (resultSet.next()) {
                         Scholarship scholarship = new Scholarship(
-                                resultSet.getLong("id"),
+                                resultSet.getInt("id"),
                                 resultSet.getString("status"),
                                 resultSet.getString("name"),
                                 resultSet.getString("family"),
@@ -45,7 +45,8 @@ public class FindScholarshipByManagerUseCaseImpl implements FindScholarshipByMan
                                 resultSet.getString("applyUni"),
                                 resultSet.getString("applyDegree"),
                                 resultSet.getString("applyField"),
-                                resultSet.getString("applyDate")
+                                resultSet.getString("applyDate"),
+                                loginUser
                         );
                         result.add(scholarship);
                     }

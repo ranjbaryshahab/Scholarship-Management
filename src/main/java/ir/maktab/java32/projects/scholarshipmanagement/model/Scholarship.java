@@ -3,10 +3,12 @@ package ir.maktab.java32.projects.scholarshipmanagement.model;
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Entity;
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Id;
 
+import java.sql.Struct;
+
 @Entity
 public class Scholarship {
     @Id
-    private Long id;
+    private Integer id;
     // state machine
     private String status;
     // main info
@@ -23,8 +25,9 @@ public class Scholarship {
     private String applyDegree;
     private String applyField;
     private String applyDate;
+    private User user;
 
-    public Scholarship(Long id, String status, String name, String family, String nationalCode, String lastUni, String lastDegree, String lastField, Float lastScore, String applyUni, String applyDegree, String applyField, String applyDate) {
+    public Scholarship(Integer id, String status, String name, String family, String nationalCode, String lastUni, String lastDegree, String lastField, Float lastScore, String applyUni, String applyDegree, String applyField, String applyDate,User user) {
         this.id = id;
         this.status = status;
         this.name = name;
@@ -38,16 +41,17 @@ public class Scholarship {
         this.applyDegree = applyDegree;
         this.applyField = applyField;
         this.applyDate = applyDate;
+        this.user = user;
     }
 
     public Scholarship() {
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -147,6 +151,14 @@ public class Scholarship {
         this.applyDate = applyDate;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "Scholarship{" +
@@ -163,6 +175,7 @@ public class Scholarship {
                 ", applyDegree='" + applyDegree + '\'' +
                 ", applyField='" + applyField + '\'' +
                 ", applyDate='" + applyDate + '\'' +
+                ", username=" + user.getUsername() +
                 '}';
     }
 }

@@ -3,28 +3,28 @@ package ir.maktab.java32.projects.scholarshipmanagement.model;
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Entity;
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Id;
 
-import java.util.Date;
-
 @Entity
 public class Log {
     @Id
-    private Long id;
+    private Integer id;
     private User user;
     private String date;
-    private String activity;
+    private String action;
+    private Scholarship scholarship;
 
-    public Log(Long id, User user, String date, String activity) {
+    public Log(Integer id, User user, String date, String action, Scholarship scholarship) {
         this.id = id;
         this.user = user;
         this.date = date;
-        this.activity = activity;
+        this.action = action;
+        this.scholarship = scholarship;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -44,21 +44,30 @@ public class Log {
         this.date = date;
     }
 
-    public String getActivity() {
-        return activity;
+    public String getAction() {
+        return action;
     }
 
-    public void setActivity(String activity) {
-        this.activity = activity;
+    public void setAction(String action) {
+        this.action = action;
+    }
+
+    public Scholarship getScholarship() {
+        return scholarship;
+    }
+
+    public void setScholarship(Scholarship scholarship) {
+        this.scholarship = scholarship;
     }
 
     @Override
     public String toString() {
         return "Log{" +
                 "id=" + id +
-                ", username=" + user.getUsername() +
-                ", date='" + date + '\'' +
-                ", activity='" + activity + '\'' +
+                ", username=" + user.getUsername() + '\'' +
+                ", scholarship_id=" + scholarship.getId() + '\'' +
+                ", action='" + action + '\'' +
+                ", date='" + date +
                 '}';
     }
 }
