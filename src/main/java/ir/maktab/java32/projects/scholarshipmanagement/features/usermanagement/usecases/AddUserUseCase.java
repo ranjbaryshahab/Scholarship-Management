@@ -3,6 +3,6 @@ package ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.UseCase;
 
 @UseCase
-public interface SubmitByUserUseCase {
-    void submit(String username,String password,String role);
+public interface AddUserUseCase {
+    void add(String username,String password,String role);
 }

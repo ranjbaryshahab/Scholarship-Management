@@ -2,17 +2,17 @@ package ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.
 
 import ir.maktab.java32.projects.scholarshipmanagement.core.annotations.Service;
 import ir.maktab.java32.projects.scholarshipmanagement.core.config.DatabaseConfig;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.SubmitByUserUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.AddUserUseCase;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 @Service
-public class SubmitByUserUseCaseImpl implements SubmitByUserUseCase {
+public class AddUserUseCaseImpl implements AddUserUseCase {
 
     @Override
-    public void submit(String username, String password, String role) {
+    public void add(String username, String password, String role) {
         try {
             Connection connection = DatabaseConfig.getDatabaseConnection();
             String sql = "insert into user(username, password, role) values(?,?,?)";

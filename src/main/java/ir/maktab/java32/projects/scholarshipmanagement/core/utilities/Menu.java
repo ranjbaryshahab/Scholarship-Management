@@ -1,5 +1,8 @@
 package ir.maktab.java32.projects.scholarshipmanagement.core.utilities;
 
+import ir.maktab.java32.projects.scholarshipmanagement.core.share.AuthenticationService;
+import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.DeleteLogUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.DeleteLogUseCaseImpl;
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCaseImpl;
 import ir.maktab.java32.projects.scholarshipmanagement.features.report.impl.ScholarshipReportByManagerUseCaseImpl;
@@ -10,14 +13,14 @@ import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.
 import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportByStudentUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportBySupervisorUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportByUniversityUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipmanagement.impl.DeleteScholarshipUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipmanagement.impl.FindScholarshipUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipmanagement.usecases.DeleteScholarshipUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipmanagement.usecases.FindScholarshipUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl.*;
 import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.usecases.*;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl.LoginUseCaseImpl;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl.LogoutUseCaseImpl;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl.SubmitByUserUseCaseImpl;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.LoginUseCase;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.LogoutUseCase;
-import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.SubmitByUserUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl.*;
+import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.usecases.*;
 import ir.maktab.java32.projects.scholarshipmanagement.model.Log;
 import ir.maktab.java32.projects.scholarshipmanagement.model.Scholarship;
 import ir.maktab.java32.projects.scholarshipmanagement.model.User;
@@ -29,6 +32,7 @@ import java.util.Scanner;
 public class Menu {
     public static User user = null;
     public static Scanner scanner = new Scanner(System.in);
+    public static Scanner optionScanner = new Scanner(System.in);
     public static String command = "";
 
     public static String printDefaultMenu() {
@@ -74,7 +78,9 @@ public class Menu {
                 +--------------------------+
                 |     Request scholarship  |
                 |     Show scholarship     |
+                |     Delete scholarship   |
                 |     Report               |
+                |     Delete account       |
                 |     Logout               |
                 +--------------------------+
                  """;
@@ -82,15 +88,18 @@ public class Menu {
 
     public static String printUniversityMenu() {
         return """
-                +--------------------------+
-                |     Show scholarship     |
-                |     Accept scholarship   |
-                |     Reject scholarship   |
-                |     Accept All           |
-                |     Reject All           |
-                |     Report               |
-                |     Logout               |
-                +--------------------------+
+                +--------------------------------+
+                |     Show scholarship           |
+                |     Accept scholarship         |
+                |     Reject scholarship         |
+                |     Accept All                 |
+                |     Reject All                 |
+                |     Report                     |
+                |     Add account                |
+                |     Show account group by role |
+                |     Delete account             |
+                |     Logout                     |
+                +--------------------------------+
                  """;
     }
 
@@ -154,7 +163,57 @@ public class Menu {
             case "report" -> {
                 ScholarshipReportByStudentUseCase scholarshipReportByStudentUseCase =
                         new ScholarshipReportByStudentUseCaseImpl();
-                scholarshipReportByStudentUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+                scholarshipReportByStudentUseCase.report().forEach((K, V) -> System.out.println("Status :" + K + ", Count:" + V));
+            }
+
+            case "delete scholarship" -> {
+                System.out.println("Scholarship Id: ");
+                int scholarshipId = scanner.nextInt();
+                DeleteScholarshipUseCase deleteScholarshipUseCase =
+                        new DeleteScholarshipUseCaseImpl();
+                System.out.println("WARNING !!! \n Deleting a scholarship eliminates all of his information including logs!");
+                System.out.println("Do you delete? (type yes or no)");
+                String option = optionScanner.nextLine().toLowerCase();
+                if (option.equals("yes")) {
+                    deleteScholarshipUseCase.deleteByScholarshipId(scholarshipId);
+                } else if (option.equals("no")) {
+                    System.out.println(printUniversityMenu());
+                }
+            }
+
+            case "delete account" -> {
+                System.out.println("WARNING !!! \n Deleting a user eliminates all of his information including logs and scholarship!");
+                System.out.println("Do you delete? (type yes or no)");
+                String option = optionScanner.nextLine().toLowerCase();
+                if (option.equals("yes")) {
+                    String username = AuthenticationService.getInstance().getLoginUser().getUsername();
+                    DeleteUserUseCase deleteUserUseCase =
+                            new DeleteUserUseCaseImpl();
+                    DeleteScholarshipUseCase deleteScholarshipUseCase =
+                            new DeleteScholarshipUseCaseImpl();
+                    DeleteLogUseCase deleteLogUseCase =
+                            new DeleteLogUseCaseImpl();
+
+                    FindScholarshipUseCase findScholarshipUseCase =
+                            new FindScholarshipUseCaseImpl();
+                    List<Scholarship> scholarshipList = findScholarshipUseCase.findAllScholarshipByUsername(username);
+
+                    for (Scholarship scholarship : scholarshipList) {
+                        deleteLogUseCase.deleteByScholarshipId(scholarship.getId());
+                    }
+
+                    for (Scholarship scholarship : scholarshipList) {
+                        deleteScholarshipUseCase.deleteByScholarshipId(scholarship.getId());
+                    }
+
+                    deleteUserUseCase.delete(username);
+
+                    LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
+                    user = logoutUseCase.logout();
+
+                } else if (option.equals("no")) {
+                    System.out.println(printUniversityMenu());
+                }
             }
         }
     }
@@ -203,7 +262,7 @@ public class Menu {
             case "report" -> {
                 ScholarshipReportByManagerUseCase scholarshipReportByManagerUseCase =
                         new ScholarshipReportByManagerUseCaseImpl();
-                scholarshipReportByManagerUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+                scholarshipReportByManagerUseCase.report().forEach((K, V) -> System.out.println("Status :" + K + ", Count:" + V));
             }
 
             case "accept all" -> {
@@ -265,7 +324,7 @@ public class Menu {
             case "report" -> {
                 ScholarshipReportBySupervisorUseCase scholarshipReportBySupervisorUseCase =
                         new ScholarshipReportBySupervisorUseCaseImpl();
-                scholarshipReportBySupervisorUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+                scholarshipReportBySupervisorUseCase.report().forEach((K, V) -> System.out.println("Status :" + K + ", Count:" + V));
             }
 
             case "accept all" -> {
@@ -302,9 +361,9 @@ public class Menu {
                 String username = scanner.nextLine();
                 System.out.println("Please enter a password: ");
                 String password = scanner.nextLine();
-                SubmitByUserUseCase submitByUserUseCase =
-                        new SubmitByUserUseCaseImpl();
-                submitByUserUseCase.submit(username, password, "Student");
+                AddUserUseCase createAccountByUserUseCase =
+                        new AddUserUseCaseImpl();
+                createAccountByUserUseCase.add(username, password, "Student");
             }
         }
     }
@@ -355,7 +414,7 @@ public class Menu {
             case "report" -> {
                 ScholarshipReportByUniversityUseCase scholarshipReportByUniversityUseCase =
                         new ScholarshipReportByUniversityUseCaseImpl();
-                scholarshipReportByUniversityUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+                scholarshipReportByUniversityUseCase.report().forEach((K, V) -> System.out.println("Status :" + K + ", Count:" + V));
             }
             case "accept all" -> {
                 AcceptAllScholarshipByUniversityUseCaseImpl acceptAllScholarshipByUniversityUseCase =
@@ -366,6 +425,56 @@ public class Menu {
                 RejectAllScholarshipByUniversityUseCase rejectAllScholarshipByUniversityUseCase =
                         new RejectAllScholarshipByUniversityUseCaseImpl();
                 rejectAllScholarshipByUniversityUseCase.rejectAll();
+            }
+            case "add account" -> {
+                System.out.println("Role (Student,Supervisor,Manager,University) :");
+                String role = scanner.nextLine();
+                System.out.println("Username: ");
+                String username = scanner.nextLine();
+                System.out.println("Password: ");
+                String password = scanner.nextLine();
+
+                AddUserUseCase createAccountByUserUseCase =
+                        new AddUserUseCaseImpl();
+                createAccountByUserUseCase.add(username, password, role);
+            }
+
+            case "delete account" -> {
+                System.out.println("Username: ");
+                String username = scanner.nextLine();
+                System.out.println("WARNING !!! \n Deleting a user eliminates all of his information including logs and scholarship!");
+                System.out.println("Do you delete? (type yes or no)");
+                DeleteUserUseCase deleteUserUseCase =
+                        new DeleteUserUseCaseImpl();
+                DeleteScholarshipUseCase deleteScholarshipUseCase =
+                        new DeleteScholarshipUseCaseImpl();
+                DeleteLogUseCase deleteLogUseCase =
+                        new DeleteLogUseCaseImpl();
+
+                FindScholarshipUseCase findScholarshipUseCase =
+                        new FindScholarshipUseCaseImpl();
+                List<Scholarship> scholarshipList = findScholarshipUseCase.findAllScholarshipByUsername(username);
+
+                for (Scholarship scholarship : scholarshipList) {
+                    deleteLogUseCase.deleteByScholarshipId(scholarship.getId());
+                }
+
+                for (Scholarship scholarship : scholarshipList) {
+                    deleteScholarshipUseCase.deleteByScholarshipId(scholarship.getId());
+                }
+
+                deleteUserUseCase.delete(username);
+                LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
+                user = logoutUseCase.logout();
+            }
+
+            case "show account group by role" -> {
+                System.out.println("Role (Student,Supervisor,Manager,University) :");
+                String role = scanner.nextLine();
+                FindUserUseCase findUserUseCase =
+                        new FindUserUseCaseImpl();
+                List<User> userList = findUserUseCase.findByRole(role);
+                userList.forEach(System.out::println);
             }
         }
 
