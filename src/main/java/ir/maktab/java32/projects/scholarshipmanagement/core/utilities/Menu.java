@@ -2,6 +2,14 @@ package ir.maktab.java32.projects.scholarshipmanagement.core.utilities;
 
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.core.share.log.ShowLogUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.impl.ScholarshipReportByManagerUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.impl.ScholarshipReportByStudentUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.impl.ScholarshipReportBySupervisorUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.impl.ScholarshipReportByUniversityUseCaseImpl;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportByManagerUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportByStudentUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportBySupervisorUseCase;
+import ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases.ScholarshipReportByUniversityUseCase;
 import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl.*;
 import ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.usecases.*;
 import ir.maktab.java32.projects.scholarshipmanagement.features.usermanagement.impl.LoginUseCaseImpl;
@@ -39,6 +47,7 @@ public class Menu {
                 |     Show scholarship list   |
                 |     Accept scholarship      |
                 |     Reject scholarship      |
+                |     Report                  |
                 |     Logout                  |
                 +-----------------------------+
                 """;
@@ -50,6 +59,7 @@ public class Menu {
                 |      Show scholarship list    |
                 |      Accept scholarship       |
                 |      Reject scholarship       |
+                |      Report                   |
                 |      Logout                   |
                 +-------------------------------+
                 """;
@@ -60,6 +70,7 @@ public class Menu {
                 +--------------------------+
                 |     Request scholarship  |
                 |     Show scholarship     |
+                |     Report               |
                 |     Logout               |
                 +--------------------------+
                  """;
@@ -71,6 +82,7 @@ public class Menu {
                 |     Show scholarship     |
                 |     Accept scholarship   |
                 |     Reject scholarship   |
+                |     Report               |
                 |     Logout               |
                 +--------------------------+
                  """;
@@ -132,6 +144,12 @@ public class Menu {
                 LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
                 user = logoutUseCase.logout();
             }
+
+            case "report" -> {
+                ScholarshipReportByStudentUseCase scholarshipReportByStudentUseCase =
+                        new ScholarshipReportByStudentUseCaseImpl();
+                scholarshipReportByStudentUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
+            }
         }
     }
 
@@ -174,6 +192,12 @@ public class Menu {
             case "logout" -> {
                 LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
                 user = logoutUseCase.logout();
+            }
+
+            case "report" -> {
+                ScholarshipReportByManagerUseCase scholarshipReportByManagerUseCase =
+                        new ScholarshipReportByManagerUseCaseImpl();
+                scholarshipReportByManagerUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
             }
         }
     }
@@ -219,6 +243,12 @@ public class Menu {
             case "logout" -> {
                 LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
                 user = logoutUseCase.logout();
+            }
+
+            case "report" -> {
+                ScholarshipReportBySupervisorUseCase scholarshipReportBySupervisorUseCase =
+                        new ScholarshipReportBySupervisorUseCaseImpl();
+                scholarshipReportBySupervisorUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
             }
         }
     }
@@ -292,6 +322,12 @@ public class Menu {
             case "logout" -> {
                 LogoutUseCase logoutUseCase = new LogoutUseCaseImpl();
                 user = logoutUseCase.logout();
+            }
+
+            case "report" -> {
+                ScholarshipReportByUniversityUseCase scholarshipReportByUniversityUseCase =
+                        new ScholarshipReportByUniversityUseCaseImpl();
+                scholarshipReportByUniversityUseCase.report().forEach((K,V)-> System.out.println("Status :" + K + ", Count:" + V));
             }
         }
 

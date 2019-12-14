@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f346e52-560b-462f-b97f-7cea0cffc422" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/AcceptScholarshipByUniversityUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/impl/RejectScholarshipByUniversityUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/AcceptScholarshipByUniversityUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/scholarshipverification/usecases/RejectScholarshipByUniversityUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/impl/ScholarshipReportByManagerUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/impl/ScholarshipReportByStudentUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/impl/ScholarshipReportBySupervisorUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/impl/ScholarshipReportByUniversityUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/usecases/ScholarshipReportByManagerUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/usecases/ScholarshipReportByStudentUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/usecases/ScholarshipReportBySupervisorUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/features/report/usecases/ScholarshipReportByUniversityUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/utilities/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/maktab/java32/projects/scholarshipmanagement/core/utilities/Menu.java" afterDir="false" />
     </list>
@@ -79,6 +83,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ir.maktab.java32.projects.scholarshipmanagement.features.report.impl" />
+      <recent name="ir.maktab.java32.projects.scholarshipmanagement.features.report.usecases" />
       <recent name="ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.impl" />
       <recent name="ir.maktab.java32.projects.scholarshipmanagement.features.scholarshipverification.usecases" />
     </key>
@@ -140,7 +146,7 @@
       <workItem from="1576213377900" duration="2044000" />
       <workItem from="1576238727230" duration="638000" />
       <workItem from="1576314606866" duration="1790000" />
-      <workItem from="1576332822159" duration="9568000" />
+      <workItem from="1576332822159" duration="11693000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1576106190217</created>
@@ -184,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576341576795</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Accept and reject scholarship option to the university menu Added.">
+      <created>1576342468299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576342468299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +223,8 @@
     <MESSAGE value="Main program completed." />
     <MESSAGE value="Target folder deleted." />
     <MESSAGE value="Add log functionality to the application." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add log functionality to the application." />
+    <MESSAGE value="Accept and reject scholarship option to the university menu Added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Accept and reject scholarship option to the university menu Added." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="58" width="800" height="677" key="#Project_Structure" timestamp="1575969789787">
@@ -221,10 +235,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="278" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1576067007166" />
-    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1576340452599">
+    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1576342673554">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1576340452599" />
+    <state x="491" y="109" width="544" height="575" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1576342673554" />
     <state x="524" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575969529105">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -237,30 +251,30 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1576340075586" />
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576341576360">
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2" timestamp="1576342468169">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576341576360" />
+    <state x="0" y="27" width="1356" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1576342468169" />
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576150319208">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1576150319208" />
-    <state width="1320" height="434" key="GridCell.Tab.0.bottom" timestamp="1576341587112">
+    <state width="1320" height="434" key="GridCell.Tab.0.bottom" timestamp="1576344554577">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="434" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1576341587112" />
-    <state width="1320" height="434" key="GridCell.Tab.0.center" timestamp="1576341587111">
+    <state width="1320" height="434" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1576344554577" />
+    <state width="1320" height="434" key="GridCell.Tab.0.center" timestamp="1576344554576">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="434" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1576341587111" />
-    <state width="1320" height="434" key="GridCell.Tab.0.left" timestamp="1576341587111">
+    <state width="1320" height="434" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1576344554576" />
+    <state width="1320" height="434" key="GridCell.Tab.0.left" timestamp="1576344554576">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="434" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1576341587111" />
-    <state width="1320" height="434" key="GridCell.Tab.0.right" timestamp="1576341587112">
+    <state width="1320" height="434" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1576344554576" />
+    <state width="1320" height="434" key="GridCell.Tab.0.right" timestamp="1576344554577">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="434" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1576341587112" />
+    <state width="1320" height="434" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1576344554577" />
     <state width="1320" height="369" key="GridCell.Tab.1.bottom" timestamp="1576106714408">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
